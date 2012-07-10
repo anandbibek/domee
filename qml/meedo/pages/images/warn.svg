@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="text/ecmascript" width="30" baseProfile="tiny" zoomAndPan="magnify" contentStyleType="text/css" viewBox="14 19 30 40" height="40" preserveAspectRatio="xMidYMid meet" version="1.1">
+    <g>
+        <path d="M 28.164 28.2 L 15.137 50.495 C 14.797 51.077 15.133 52.0 16.0 52.0 L 42.055 52.0 C 42.827 52.0 43.307 51.161 42.918 50.495 L 29.891 28.2 C 29.484 27.502 28.526 27.578 28.164 28.2 z " fill-opacity="0.2" stroke-opacity="0.2"/>
+        <polygon fill-opacity="0.5" stroke-opacity="0.5" points="29.027,28.705 42.055,51 16,51"/>
+        <rect x="14" width="30" fill="none" y="19" height="40"/>
+        <linearGradient x1="28.8696" gradientTransform="matrix(1 0 0 -1 0.1577 77.8157)" y1="44.6318" x2="28.8696" gradientUnits="userSpaceOnUse" y2="10.7986" xlink:type="simple" xlink:actuate="onLoad" id="XMLID_3_" xlink:show="other">
+            <stop stop-color="#ffe23d" offset="0"/>
+            <stop stop-color="#fad337" offset="0.2239"/>
+            <stop stop-color="#efab26" offset="0.6537"/>
+            <stop stop-color="#e48717" offset="1"/>
+        </linearGradient>
+        <polygon fill="url(#XMLID_3_)" points="29.027,27.705 42.055,50 16,50"/>
+        <polygon fill-opacity="0.2" stroke-opacity="0.2" points="42.055,50 29.027,27.705 29.027,29.684 40.313,49 17.743,48.997 16,50"/>
+        <polygon fill="#ffffff" fill-opacity="0.25" stroke-opacity="0.25" points="17.743,48.997 29.027,29.684 29.027,27.705 16,50"/>
+        <linearGradient x1="28.8467" gradientTransform="matrix(1 0 0 -1 0.1577 77.8157)" y1="29.1006" x2="28.8467" gradientUnits="userSpaceOnUse" y2="33.8613" xlink:type="simple" xlink:actuate="onLoad" id="XMLID_4_" xlink:show="other">
+            <stop stop-color="#e3e3e3" offset="0"/>
+            <stop stop-color="#404040" offset="1"/>
+        </linearGradient>
+        <path fill="url(#XMLID_4_)" d="M 30.063 43.953 L 27.943 43.953 C 27.094 44.353 26.503 45.212 26.503 46.212 C 26.503 47.591 27.623 48.714 29.003 48.714 C 30.383 48.714 31.506 47.591 31.506 46.212 C 31.506 45.212 30.912 44.354 30.063 43.953 z " fill-opacity="0.3" stroke-opacity="0.3"/>
+        <polygon fill="#ffffff" fill-opacity="0.25" stroke-opacity="0.25" points="30.307,35.626 30.074,42.953 27.931,42.953 26.961,43.953 31.043,43.953 31.34,34.626"/>
+        <polygon fill-opacity="0.2" stroke-opacity="0.2" points="27.931,42.953 27.701,35.626 30.307,35.626 31.34,34.626 26.669,34.626 26.961,43.953"/>
+        <circle r="1.501" cx="29.004" cy="46.212"/>
+        <polygon points="27.701,35.626 27.926,42.595 27.919,42.595 27.931,42.953 30.074,42.953 30.307,35.626"/>
+    </g>
+</svg>
