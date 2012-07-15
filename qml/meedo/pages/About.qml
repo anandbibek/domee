@@ -36,10 +36,10 @@ Page {
                 width: parent.width
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 font.pixelSize: 26
-                text: qsTr("<p><h1>DoMee 1.0 </h1> A personal To Do manager with the general functions. " +
+                text: qsTr("<p><h1>DoMee 1.1 </h1> A personal To Do manager with the general functions. " +
                            "Specialises on sleek and fast approach, with an elegant UI. " +
                            "<p>User can input multiple entries categorised in three priority levels, with the option to add notes and sub list.\n<h4>Swipe the main screen to access the other lists</h4>  " +
-                           "<br><br><h3>Developed by @Anand_Bibek<br>theweekendcoder.blogspot.com"
+                           "<br><br><h5>Developed by @Anand_Bibek<br>theweekendcoder.blogspot.com"
                            );
 
             }

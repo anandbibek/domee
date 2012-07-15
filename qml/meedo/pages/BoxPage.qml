@@ -19,12 +19,21 @@ Page {
 
     PathView {
         id: pathView
+        flickDeceleration: 300
         anchors.top: titleheader1.bottom
         anchors.right: parent.right
         anchors.bottom: parent.bottom
         anchors.left: parent.left
         clip: true
-        flickDeceleration: 200
+        onCurrentIndexChanged: {
+            if(currentIndex == 0)
+                tabI.checked = true
+            if(currentIndex == 1)
+                tabN.checked = true
+            if(currentIndex == 2)
+                tabL.checked = true
+        }
+
 
         model: modelX
         path: Path {
@@ -344,6 +353,7 @@ Page {
                 //updateUi2()
                 //updateUix2()
                 //updateUix3()
+                listUpdate()
             }
         }
     }
@@ -384,8 +394,28 @@ Page {
 
     tools: ToolBarLayout {
         ToolIcon {
+            id: t1
             iconId: "toolbar-add"
             onClicked: todoCreateDialog.open()}
+
+        ButtonRow {
+            anchors {left: t1.right; right: deleteTool.left}
+            TabButton {
+                id : tabI
+                text: "I"
+                onClicked: pathView.currentIndex = 0
+            }
+            TabButton {
+                id : tabN
+                text: "N"
+                onClicked: pathView.currentIndex = 1
+            }
+            TabButton {
+                id : tabL
+                text: "L"
+                onClicked: pathView.currentIndex = 2
+            }
+        }
 
         ToolIcon { id: deleteTool; iconId: "toolbar-view-menu";
             onClicked: mainMenu.open() //{deleteItem(); root.pageStack.pop()}
@@ -411,12 +441,19 @@ Page {
 
     function listUpdate(){
         //mainWorker.source = "script4.js"
+        modelsClear()
         var item = {arg: "read", model : itemModel, box : 0}
         var item1 = {arg: "read", model : itemModel1, box : 1}
         var item2 = {arg: "read", model : itemModel2, box : 2}
         mainWorker.sendMessage(item)
         mainWorker.sendMessage(item1)
         mainWorker.sendMessage(item2)
+    }
+
+    function modelsClear(){
+        itemModel.clear()
+        itemModel1.clear()
+        itemModel2.clear()
     }
 
     function propertyUpdate(index, item){

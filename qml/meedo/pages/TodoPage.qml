@@ -146,6 +146,7 @@ Page {
             //item = Core.readTodoItem(todoId)
             listModel.clear()
             commentField.text = ""
+            noteField.text = ""
             jsonParse(notte)
             //listModel = JSON.parse(notte)
 

@@ -25,6 +25,8 @@ Page {
         case "resetTable" :
             Core.dropTable()
             Core.createTable()
+            boxPage.listUpdate()
+            pageStack.pop()
             break;
         case "createTodos10" :
             createTodos(10)

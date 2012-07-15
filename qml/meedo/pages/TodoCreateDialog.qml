@@ -120,8 +120,14 @@ Sheet {
 
     onStatusChanged: {
         if(status == DialogStatus.Opening) {
+            todoTitle = ""
+            todoNote = ""
+            titleField.text = ""
+            titleField2.text = ""
             titleField.forceActiveFocus()
-            screen.keyboardOpen = true
+            //screen.keyboardOpen = true
+            //inputContext.softwareInputPanelVisible = true
+            titleField.platformOpenSoftwareInputPanel()
             todoTitle = ""
             todoNote = ""
             itemSelection.value = boxx()

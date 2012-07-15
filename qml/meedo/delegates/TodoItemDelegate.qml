@@ -90,7 +90,17 @@ MouseArea {
         id: rectangle1
         width: parent.width + 5
         height: parent.height
-        color: listItem.pressed? "lightGreen" :"#00000000"
+
+        gradient: Gradient {
+            GradientStop {
+                position: 0.00;
+                color: listItem.pressed? "#ffd3a6" :"#00000000"
+            }
+            GradientStop {
+                position: 1.00;
+                color: listItem.pressed? "#ff8000" :"#00000000"
+            }
+        }
         border.color: "#000000"
         opacity: 0.250
         anchors.verticalCenterOffset: -2

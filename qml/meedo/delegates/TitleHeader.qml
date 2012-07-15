@@ -10,9 +10,9 @@ Rectangle {
 //    anchors.rightMargin:0
     anchors { left: parent.left; right: parent.right; top: parent.top }
     height: 70
-    color: "#47ad2e"
+    color: "#ff8000"
 
-    //#54b87b
+    //#54b87b "#47ad2e"
 
     property alias text: itemText.text
     width: 100

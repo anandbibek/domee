@@ -132,7 +132,7 @@ PageStackWindow {
         Core.openDB();
         boxPage.listUpdate()
         pageStack.push(boxPage)
-        theme.colorScheme = 2
+        theme.colorScheme = 15
         //pageStack.push(Qt.resolvedUrl("pages/BoxPage.qml"));
     }
 }
