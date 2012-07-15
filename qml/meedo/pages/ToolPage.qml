@@ -13,9 +13,9 @@ Page {
 
         ListElement { title: "Reset Table";           name : "resetTable"  }
 //        ListElement { title: "Dark theme"; name : "Change background"  }
-//        ListElement { title: "10 Todo Item";          name: "createTodos10" }
-//        ListElement { title: "100 Random Todo Item";  name: "createTodos100" }
-//        ListElement { title: "1000 Random Todo Item"; name: "createTodos1000" }
+        //ListElement { title: "10 Todo Item";          name: "createTodos10" }
+        //ListElement { title: "100 Random Todo Item";  name: "createTodos100" }
+        //ListElement { title: "1000 Random Todo Item"; name: "createTodos1000" }
     }
 
     function runTest(testName)

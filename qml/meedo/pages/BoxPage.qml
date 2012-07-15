@@ -353,7 +353,7 @@ Page {
                 //updateUi2()
                 //updateUix2()
                 //updateUix3()
-                listUpdate()
+                //listUpdate()
             }
         }
     }
@@ -510,6 +510,7 @@ Page {
             var item = Core.readTodoItem(contextMenu.id1)
             item.box = box
             Core.updateTodo(item)
+            modelsClear()
             listUpdate()
 
         }
@@ -588,13 +589,13 @@ Page {
         }
     }
 
- PageIndicator{
-     totalPages: 3
-     currentPage : pathView.currentIndex == 0 ? 1 : pathView.currentIndex == 1 ? 2 : 3
-     anchors.bottom: parent.bottom
-     anchors.bottomMargin: 15
-     anchors.horizontalCenter: parent.horizontalCenter
- }
+// PageIndicator{
+//     totalPages: 3
+//     currentPage : pathView.currentIndex == 0 ? 1 : pathView.currentIndex == 1 ? 2 : 3
+//     anchors.bottom: parent.bottom
+//     anchors.bottomMargin: 15
+//     anchors.horizontalCenter: parent.horizontalCenter
+// }
 
  TitleHeader {
      text: pathView.currentIndex == 0 ? "Important" : pathView.currentIndex == 1 ? "Normal" : "Low"
